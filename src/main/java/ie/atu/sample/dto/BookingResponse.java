@@ -1,4 +1,4 @@
-package ie.atu.sample.client;
+package ie.atu.sample.dto;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

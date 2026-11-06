@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/bookings")
 public class BookingController {
-    private BookingService bookingService;
+    private final BookingService bookingService;
     public BookingController(BookingService bookingService) {
         this.bookingService = bookingService;
     }
@@ -20,4 +20,5 @@ public class BookingController {
     public Booking addBooking(@RequestBody Booking booking){
        return bookingService.addBooking(booking);
     }
+
 }
